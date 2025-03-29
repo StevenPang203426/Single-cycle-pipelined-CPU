@@ -1,0 +1,45 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto d85024d2836d444eafacd7af10682315 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'aluout' [D:/vivado/CPU/CPU.srcs/sources_1/new/top.sv:39]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'a' [D:/vivado/CPU/CPU.srcs/sources_1/new/dMemoryDecoder.sv:42]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'pWriteData' [D:/vivado/CPU/CPU.srcs/sources_1/new/dMemoryDecoder.sv:43]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 8 for port 'b' [D:/vivado/CPU/CPU.srcs/sources_1/new/getx.sv:29]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 8 for port 'b' [D:/vivado/CPU/CPU.srcs/sources_1/new/getx.sv:30]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 8 for port 'b' [D:/vivado/CPU/CPU.srcs/sources_1/new/getx.sv:31]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/vivado/CPU/CPU.srcs/sources_1/imports/new/Bin2BCD8bit.sv" Line 2. Module Bin2BCD8bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado/CPU/CPU.srcs/sources_1/imports/new/Bin2BCD8bit.sv" Line 2. Module Bin2BCD8bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado/CPU/CPU.srcs/sources_1/imports/new/Bin2BCD8bit.sv" Line 2. Module Bin2BCD8bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado/CPU/CPU.srcs/sources_1/imports/new/Hex7Seg.sv" Line 1. Module Hex7Seg doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.floper(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.IO
+Compiling module xil_defaultlib.Bin2BCD8bit
+Compiling module xil_defaultlib.getx
+Compiling module xil_defaultlib.Hex7Seg
+Compiling module xil_defaultlib.m7seg
+Compiling module xil_defaultlib.dMemoryDecoder
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

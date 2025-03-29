@@ -1,0 +1,31 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2024/12/13 16:56:55
+// Design Name: 
+// Module Name: imem2
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module imem2(
+    input  logic [5:0] a,
+    output logic [31:0] rd
+    );
+    logic [31:0] RAM[63:0];
+    initial
+        $readmemh("memfile.dat",RAM);
+    assign rd = RAM[a];
+endmodule
